@@ -1,0 +1,321 @@
+:root {
+  --gradient-right: rgba(0, 200, 255, 0.35); /* Azul celeste */
+  --gradient-left: rgba(255, 100, 180, 0.35); /* Rosa-magenta */
+  --gradient-background-right: rgba(0, 150, 100, 0.25); /* Verde agua */
+  --gradient-background-left: rgba(255, 200, 0, 0.25); /* Amarillo */
+  --gradient-background: rgba(15, 23, 42, 0.7);
+  /* --gradient-background: #0f172a; */
+}
+body {
+  margin: 0;
+  height: 100vh;
+  /* overflow: hidden; */
+  background-image: url("https://community.fastly.steamstatic.com/public/images/profile/2020/bg_dots.png");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+aside {
+  height: 100%;
+  background-color: rgba(71, 84, 75, 0.5);
+  border-radius: 2px;
+  padding: 0.5rem;
+}
+button {
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 30px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  background-color: #00966440;
+  /* background-color: #302e4e; */
+  transition: color 0.2s ease-in-out;
+}
+button:hover {
+  background-color: #00966466;
+}
+aside {
+  width: 250px;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+p,
+i {
+  font-family: "Open Sans";
+  color: white;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+footer {
+  font-size: 14px;
+  padding: 1rem;
+  max-width: 976px;
+  margin: 0 auto;
+  background-color: black;
+  text-align: center;
+}
+footer i {
+  color: #9b9b9f;
+}
+.profile-container {
+  max-width: 976px;
+  background: radial-gradient(
+      farthest-side at top right,
+      var(--gradient-right),
+      transparent 500px
+    ),
+    radial-gradient(
+      farthest-corner at top left,
+      var(--gradient-left),
+      transparent 600px
+    ),
+    radial-gradient(
+      farthest-corner at bottom right,
+      var(--gradient-background-right),
+      transparent 500px
+    ),
+    radial-gradient(
+      farthest-corner at bottom left,
+      var(--gradient-background-left),
+      transparent 600px
+    );
+  background-color: var(--gradient-background);
+  margin: 0 auto;
+  padding: 1rem;
+}
+.profile-content {
+  display: grid;
+  grid-template-columns: 2;
+  gap: 1rem;
+}
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+/******* === PROFILE HEADER LEFT === *******/
+.profile-header-left {
+  display: flex;
+  gap: 2rem;
+}
+.profile-frame {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 2px;
+}
+.profile-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+}
+/* marco neon */
+.profile-frame::before {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 2px;
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.4);
+  pointer-events: none;
+  animation: neonPulse 2s infinite alternate;
+}
+@keyframes neonPulse {
+  from {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.6),
+      0 0 15px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.2);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1),
+      0 0 40px rgba(255, 255, 255, 0.8), 0 0 70px rgba(255, 255, 255, 0.6);
+  }
+}
+.profile-name {
+  font-size: 24px;
+  font-weight: 100;
+  color: white;
+}
+.web-developer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 13px;
+  color: #c4c4c4;
+}
+.web-developer h3 {
+  font-size: 13px;
+  font-weight: 400;
+}
+.profile-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.profile-location img {
+  width: 1rem;
+  height: auto;
+}
+/******* === PROFILE HEADER RIGHT === *******/
+
+.profile-header-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.profile-level {
+  font-size: 19px;
+  display: flex;
+  /* align-items: center; */
+  gap: 0.5rem;
+}
+.profile-level-number {
+  font-size: 14px;
+  border: 2px solid #9b9b9b;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centra el texto */
+  padding: 1rem;
+}
+
+/******* === PROFILE CONTENT === *******/
+.profile-content {
+  display: flex;
+  margin-top: 2rem;
+}
+.profile-content-sections {
+  flex: 1;
+}
+/******* === ASIDE === *******/
+.aside-header {
+  color: #9b9b9f;
+  margin-bottom: 12px;
+}
+.aside-header p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 200;
+  color: #9b9b9f;
+}
+.aside-header p:nth-child(2) {
+  font-size: 15px;
+  color: #9b9b9f;
+}
+.badges,
+.other-tools {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 14px;
+}
+.other-tools {
+  margin-top: 1rem;
+}
+
+.badges span,
+.other-tools span {
+  font-size: 24px;
+  font-weight: 200;
+  color: #9b9b9f;
+  margin-left: 0.1rem;
+}
+
+.badges-container,
+.other-tools-container {
+  display: grid;
+  grid-template-columns: repeat(4, 40px);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.badges-container object,
+.other-tools-container object {
+  width: 2rem;
+}
+
+/******* PROJECTS *******/
+.profile-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 2px;
+  background-color: rgba(71, 84, 75, 0.5);
+}
+.project-container {
+  padding: 0 1rem;
+}
+.profile-projects header {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  background: linear-gradient(
+    90deg,
+    var(--gradient-left),
+    var(--gradient-background-right)
+  );
+  border-radius: 2px;
+  /* padding: 0.5rem; */
+}
+.profile-projects header h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 1rem;
+}
+
+.project-card {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-card img {
+  width: 250px;
+  height: 126.5px;
+}
+.project-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project-info h3 {
+  font-size: 18px;
+}
+.project-info p {
+  font-size: 14px;
+}
+.project-footer {
+  padding: 0 1rem;
+  line-height: 32px;
+  font-size: 13px;
+  height: 2rem;
+  background-color: var(--gradient-background-right);
+  border-radius: 2px;
+  /* width: 95%; */
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-technologies {
+  display: flex;
+  gap: 0.5rem;
+}
+.project-technologies object {
+  width: 1.5rem;
+}

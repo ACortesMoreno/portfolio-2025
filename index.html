@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="./reset.css" as="style">
+    <link rel="preload" href="./styles.css" as="style">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Steamfolio</title>
+</head>
+
+<body>
+    <!------------ === PROFILE HEADER === ------------>
+    <div class="profile-container">
+        <header class="profile-header">
+            <div class="profile-header-left">
+                <div class="profile-frame">
+                    <img src="./assets/portrait.webp" alt="Una imagen mia">
+                </div>
+                <div class="profile-info">
+                    <h2 class="profile-name">Alejandro Cortés</h2>
+                    <div class="web-developer">
+                        <h3>Desarrollador Frontend</h3>
+                        <div class="profile-location">
+                            <img src="./assets/es.svg" alt="Bandera de España" width="3rem">
+                            <p>Granada, España</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-header-right">
+                <div class="profile-level">
+                    <h3>Nivel</h3>
+                    <p class="profile-level-number">74</p>
+                </div>
+                <a href="mailto:lacrimadev@gmail.com">
+                    <button>Enviar un mensaje</button>
+                </a>
+            </div>
+        </header>
+
+        <!------------ === PROFILE CONTENT === ------------>
+        <div class="profile-content">
+            <!------------ aside ------------>
+            <div class="profile-content-sections">
+                <section class="profile-projects">
+                    <header>
+                        <h2>Expositor de proyectos</h2>
+                    </header>
+                    <div class="project-container">
+                        <div class="project-card">
+                            <a href="https://nutriplo.com" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/nutriplo.webp" alt="Imagen de nutriplo">
+                            </a>
+                            <div class="project-info">
+                                <a href="https://nutriplo.com" target="_blank" rel="noopener noreferrer">
+                                    <h3>Nutriplo</h3>
+                                </a>
+                                <p>Un proyecto muy especial para mí, donde pude transformar una idea en una herramienta
+                                    real pensada para profesionales de la nutrición. Me permitió enfrentar desafíos como
+                                    diseñar experiencias claras para los usuarios, organizar información sensible de
+                                    manera segura y, sobre todo, entender mejor todo el proceso de crear un producto
+                                    desde cero hasta algo funcional y útil.</p>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <p>Tecnologías usadas 10 de 16</p>
+                            <div class="project-technologies">
+                                <!------------ Typescript ------------>
+                                <object data="./assets/ts.svg" type="image/svg+xml" class="icon"></object>
+
+                                <!------------ React ------------>
+                                <object data="./assets/react.svg" type="image/svg+xml" class="icon"></object>
+
+                                <!------------ Tailwind ------------>
+                                <object data="./assets/tailwind.svg" type="image/svg+xml" class="icon"></object>
+
+                                <!------------ Vite ------------>
+                                <object data="./assets/vite.svg" type="image/svg+xml" class="icon"></object>
+
+                                <!------------ Node.js ------------>
+                                <object data="./assets/node.svg" type="image/svg+xml" class="icon"></object>
+
+                                <!------------ PostgreSQL ------------>
+                                <object data="./assets/postgresql.svg" type="image/svg+xml" class="icon"></object>
+
+                                <!------------ Express ------------>
+                                <object data="./assets/express.svg" type="image/svg+xml" class="icon"></object>
+
+                                <!------------ Git ------------>
+                                <object data="./assets/git.svg" type="image/svg+xml" class="icon"></object>
+
+                                <!------------ GitHub ------------>
+                                <object data="./assets/github.svg" type="image/svg+xml" class="icon"></object>
+
+                                <!------------ Markdown ------------>
+                                <object data="./assets/markdown.svg" type="image/svg+xml" class="icon"></object>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-container">
+                        <div class="project-card">
+                            <a href="https://lacrimastudios.com" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/lacrimastudios.webp" alt="Imagen de nutriclub">
+                            </a>
+                            <div class="project-info">
+                                <a href="https://lacrimastudios.com" target="_blank" rel="noopener noreferrer">
+                                    <h3>Lacrimastudios</h3>
+                                </a>
+                                <p>Mi espacio personal para ofrecer servicios de desarrollo web. Más que una página, fue
+                                    un ejercicio de identidad: cómo comunicar lo que hago, cómo transmitir confianza y
+                                    cómo mostrar mi trabajo de una forma honesta y atractiva.</p>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <p>Tecnologías usadas 2 de 16</p>
+                            <div class="project-technologies">
+                                <!------------ Wordpress ------------>
+                                <object data="./assets/wordpress.svg" type="image/svg+xml" class="icon"></object>
+
+                                <!------------ Elementor ------------>
+                                <object data="./assets/elementor.svg" type="image/svg+xml" class="icon"></object>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="profile-projects">
+                    <header>
+                        <h2>Experiencia laboral</h2>
+                    </header>
+                    <div class="project-container">
+                        <div class="project-card">
+                            <a href="https://nutriclub.cl" target="_blank" rel="noopener noreferrer">
+                                <img src="/assets/nutriclub.webp" alt="Imagen de nutriclub">
+                            </a>
+                            <div class="project-info">
+                                <a href="https://nutriclub.cl" target="_blank" rel="noopener noreferrer">
+                                    <h3>Nutriclub</h3>
+                                </a>
+                                <p>Una tienda digital para profesionales y estudiantes de nutrición. Fue un proyecto que
+                                    me enseñó mucho sobre cómo estructurar catálogos de productos digitales y crear una
+                                    experiencia de compra sencilla, clara y confiable.</p>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <p>Tecnologías usadas 2 de 16</p>
+                            <div class="project-technologies">
+                                <!------------ Wordpress ------------>
+                                <object data="./assets/wordpress.svg" type="image/svg+xml" class="icon"></object>
+
+                                <!------------ Elementor ------------>
+                                <object data="./assets/elementor.svg" type="image/svg+xml" class="icon"></object>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-container">
+                        <div class="project-card">
+                            <a href="https://nativobjj.com" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/nativobjj.webp" alt="Imagen de nativobjj">
+                            </a>
+                            <div class="project-info">
+                                <a href="https://nativobjj.com" target="_blank" rel="noopener noreferrer">
+                                    <h3>Nativo BJJ</h3>
+                                </a>
+                                <p>Una tienda online especializada en equipamiento para jiu-jitsu brasileño. Con este
+                                    proyecto aprendí a manejar la lógica de un e-commerce físico, desde la organización
+                                    de productos hasta la importancia de transmitir la esencia de una marca ligada a una
+                                    comunidad deportiva.</p>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <p>Tecnologías usadas 1 de 16</p>
+                            <div class="project-technologies">
+                                <!------------ Wordpress ------------>
+                                <object data="./assets/wordpress.svg" type="image/svg+xml" class="icon"></object>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside>
+                <section>
+                    <header class="aside-header">
+                        <p>Sin Conexión</p>
+                        <P>Última Conexión: ayer</P>
+                    </header>
+                    <div class="badges">
+                        <p>Tecnologías <span>16</span></p>
+                        <div class="badges-container">
+                            <!------------ HTML5 ------------>
+                            <object data="./assets/html5.svg" type="image/svg+xml" class="icon"></object>
+
+                            <!------------ CSS ------------>
+                            <object data="./assets/css.svg" type="image/svg+xml" class="icon"></object>
+
+                            <!------------ JS ------------>
+                            <object data="./assets/js.svg" type="image/svg+xml" class="icon"></object>
+
+                            <!------------ Typescript ------------>
+                            <object data="./assets/ts.svg" type="image/svg+xml" class="icon"></object>
+
+                            <!------------ React ------------>
+                            <object data="./assets/react.svg" type="image/svg+xml" class="icon"></object>
+
+                            <!------------ Tailwind ------------>
+                            <object data="./assets/tailwind.svg" type="image/svg+xml" class="icon"></object>
+
+                            <!------------ Sass ------------>
+                            <object data="./assets/sass.svg" type="image/svg+xml" class="icon"></object>
+
+                            <!------------ Node.js ------------>
+                            <object data="./assets/node.svg" type="image/svg+xml" class="icon"></object>
+
+                            <!------------ Vite ------------>
+                            <object data="./assets/vite.svg" type="image/svg+xml" class="icon"></object>
+
+                            <!------------ PostgreSQL ------------>
+                            <object data="./assets/postgresql.svg" type="image/svg+xml" class="icon"></object>
+
+                            <!------------ Express ------------>
+                            <object data="./assets/express.svg" type="image/svg+xml" class="icon"></object>
+
+                            <!------------ Git ------------>
+                            <object data="./assets/git.svg" type="image/svg+xml" class="icon"></object>
+
+                            <!------------ GitHub ------------>
+                            <object data="./assets/github.svg" type="image/svg+xml" class="icon"></object>
+
+                            <!------------ Markdown ------------>
+                            <object data="./assets/markdown.svg" type="image/svg+xml" class="icon"></object>
+
+                            <!------------ Wordpress ------------>
+                            <object data="./assets/wordpress.svg" type="image/svg+xml" class="icon"></object>
+
+                            <!------------ Elementor ------------>
+                            <object data="./assets/elementor.svg" type="image/svg+xml" class="icon"></object>
+                        </div>
+                    </div>
+                    <div class="other-tools">
+                        <p>Otras herramientas <span>7</span></p>
+                        <div class="other-tools-container">
+                            <!------------ VSC ------------>
+                            <object data="./assets/vsc.svg" type="image/svg+xml" class="icon"></object>
+
+                            <!------------ Windsurf ------------>
+                            <object data="./assets/windsurf.svg" type="image/svg+xml" class="icon"></object>
+
+                            <!------------ Trello ------------>
+                            <object data="./assets/trello.svg" type="image/svg+xml" class="icon"></object>
+
+                            <!------------ Linux ------------>
+                            <object data="./assets/linux.svg" type="image/svg+xml" class="icon"></object>
+
+                            <!------------ Vercel ------------>
+                            <object data="./assets/vercel.svg" type="image/svg+xml" class="icon"></object>
+
+                            <!------------ Railway ------------>
+                            <object data="./assets/railway.svg" type="image/svg+xml" class="icon"></object>
+
+                            <!------------ Supabase ------------>
+                            <object data="./assets/supabase.svg" type="image/svg+xml" class="icon"></object>
+
+
+                        </div>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </div>
+    <footer>
+        <i>Sí, parece Steam 👀. Es a propósito: un tributo hecho por diversión y para aprender. Todo el crédito
+            real a
+            Valve.</i>
+    </footer>
+
+
+
+
+</body>
+
+</html>
