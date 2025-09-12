@@ -18,10 +18,6 @@
 </head>
 
 <body>
-    <div class="pacman-container">
-        <object data="./assets/pacman-1.svg" type="image/svg+xml" class="pacman-1"></object>
-        <object data="./assets/pacman-2.svg" type="image/svg+xml" class="pacman-2"></object>
-    </div>
     <!------------ === PROFILE HEADER === ------------>
     <div class="profile-container">
         <header class="profile-header">
@@ -30,13 +26,28 @@
                     <img src="./assets/portrait.webp" alt="Una imagen mia">
                 </div>
                 <div class="profile-info">
-                    <h2 class="profile-name">Alejandro Cortés</h2>
-                    <div class="web-developer">
-                        <h3>Desarrollador Frontend</h3>
-                        <div class="profile-location">
-                            <img src="./assets/es.svg" alt="Bandera de España" width="3rem">
-                            <p>Granada, España</p>
+                    <!------------ Profile name ------------>
+                    <div>
+                        <h2 class="profile-name">Alejandro Cortés</h2>
+                        <div class="web-developer">
+                            <h3>Desarrollador Frontend</h3>
+                            <div class="profile-location">
+                                <img src="./assets/es.svg" alt="Bandera de España" width="3rem">
+                                <p>Granada, España</p>
+                            </div>
                         </div>
+                    </div>
+
+                    <!------------ Social media ------------>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/alejandro-cort%C3%A9s-moreno-5b31662a7/" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="./assets/social-media/linkedin.svg" alt="LinkedIn" class="icon" />
+                        </a>
+                        <a class="social-media" href="https://github.com/acortesmoreno" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="./assets/technologies/github.svg" alt="GitHub" class="icon" />
+                        </a>
                     </div>
                 </div>
             </div>
@@ -67,7 +78,7 @@
                     <div class="project-container">
                         <div class="project-card">
                             <a href="https://nutriplo.com" target="_blank" rel="noopener noreferrer">
-                                <img src="./assets/nutriplo.webp" alt="Imagen de nutriplo">
+                                <img src="./assets/projects-screenshots/nutriplo.webp" alt="Imagen de nutriplo">
                             </a>
                             <div class="project-info">
                                 <a href="https://nutriplo.com" target="_blank" rel="noopener noreferrer">
@@ -84,41 +95,49 @@
                             <p>Tecnologías usadas 10 de 16</p>
                             <div class="project-technologies">
                                 <!------------ Typescript ------------>
-                                <object data="./assets/ts.svg" type="image/svg+xml" class="icon"></object>
+                                <object data="./assets/technologies/ts.svg" type="image/svg+xml" class="icon"></object>
 
                                 <!------------ React ------------>
-                                <object data="./assets/react.svg" type="image/svg+xml" class="icon"></object>
+                                <object data="./assets/technologies/react.svg" type="image/svg+xml"
+                                    class="icon"></object>
 
                                 <!------------ Tailwind ------------>
-                                <object data="./assets/tailwind.svg" type="image/svg+xml" class="icon"></object>
+                                <object data="./assets/technologies/tailwind.svg" type="image/svg+xml"
+                                    class="icon"></object>
 
                                 <!------------ Vite ------------>
-                                <object data="./assets/vite.svg" type="image/svg+xml" class="icon"></object>
+                                <object data="./assets/technologies/vite.svg" type="image/svg+xml"
+                                    class="icon"></object>
 
                                 <!------------ Node.js ------------>
-                                <object data="./assets/node.svg" type="image/svg+xml" class="icon"></object>
+                                <object data="./assets/technologies/node.svg" type="image/svg+xml"
+                                    class="icon"></object>
 
                                 <!------------ PostgreSQL ------------>
-                                <object data="./assets/postgresql.svg" type="image/svg+xml" class="icon"></object>
+                                <object data="./assets/technologies/postgresql.svg" type="image/svg+xml"
+                                    class="icon"></object>
 
                                 <!------------ Express ------------>
-                                <object data="./assets/express.svg" type="image/svg+xml" class="icon"></object>
+                                <object data="./assets/technologies/express.svg" type="image/svg+xml"
+                                    class="icon"></object>
 
                                 <!------------ Git ------------>
-                                <object data="./assets/git.svg" type="image/svg+xml" class="icon"></object>
+                                <object data="./assets/technologies/git.svg" type="image/svg+xml" class="icon"></object>
 
                                 <!------------ GitHub ------------>
-                                <object data="./assets/github.svg" type="image/svg+xml" class="icon"></object>
+                                <object data="./assets/technologies/github.svg" type="image/svg+xml"
+                                    class="icon"></object>
 
                                 <!------------ Markdown ------------>
-                                <object data="./assets/markdown.svg" type="image/svg+xml" class="icon"></object>
+                                <object data="./assets/technologies/markdown.svg" type="image/svg+xml"
+                                    class="icon"></object>
                             </div>
                         </div>
                     </div>
                     <div class="project-container">
                         <div class="project-card">
                             <a href="https://lacrimastudios.com" target="_blank" rel="noopener noreferrer">
-                                <img src="./assets/lacrimastudios.webp" alt="Imagen de nutriclub">
+                                <img src="./assets/projects-screenshots/lacrimastudios.webp" alt="Imagen de nutriclub">
                             </a>
                             <div class="project-info">
                                 <a href="https://lacrimastudios.com" target="_blank" rel="noopener noreferrer">
@@ -133,10 +152,12 @@
                             <p>Tecnologías usadas 2 de 16</p>
                             <div class="project-technologies">
                                 <!------------ Wordpress ------------>
-                                <object data="./assets/wordpress.svg" type="image/svg+xml" class="icon"></object>
+                                <object data="./assets/technologies/wordpress.svg" type="image/svg+xml"
+                                    class="icon"></object>
 
                                 <!------------ Elementor ------------>
-                                <object data="./assets/elementor.svg" type="image/svg+xml" class="icon"></object>
+                                <object data="./assets/technologies/elementor.svg" type="image/svg+xml"
+                                    class="icon"></object>
                             </div>
                         </div>
                     </div>
@@ -148,7 +169,7 @@
                     <div class="project-container">
                         <div class="project-card">
                             <a href="https://nutriclub.cl" target="_blank" rel="noopener noreferrer">
-                                <img src="/assets/nutriclub.webp" alt="Imagen de nutriclub">
+                                <img src="/assets/projects-screenshots/nutriclub.webp" alt="Imagen de nutriclub">
                             </a>
                             <div class="project-info">
                                 <a href="https://nutriclub.cl" target="_blank" rel="noopener noreferrer">
@@ -163,17 +184,19 @@
                             <p>Tecnologías usadas 2 de 16</p>
                             <div class="project-technologies">
                                 <!------------ Wordpress ------------>
-                                <object data="./assets/wordpress.svg" type="image/svg+xml" class="icon"></object>
+                                <object data="./assets/technologies/wordpress.svg" type="image/svg+xml"
+                                    class="icon"></object>
 
                                 <!------------ Elementor ------------>
-                                <object data="./assets/elementor.svg" type="image/svg+xml" class="icon"></object>
+                                <object data="./assets/technologies/elementor.svg" type="image/svg+xml"
+                                    class="icon"></object>
                             </div>
                         </div>
                     </div>
                     <div class="project-container">
                         <div class="project-card">
                             <a href="https://nativobjj.com" target="_blank" rel="noopener noreferrer">
-                                <img src="./assets/nativobjj.webp" alt="Imagen de nativobjj">
+                                <img src="./assets/projects-screenshots/nativobjj.webp" alt="Imagen de nativobjj">
                             </a>
                             <div class="project-info">
                                 <a href="https://nativobjj.com" target="_blank" rel="noopener noreferrer">
@@ -189,7 +212,8 @@
                             <p>Tecnologías usadas 1 de 16</p>
                             <div class="project-technologies">
                                 <!------------ Wordpress ------------>
-                                <object data="./assets/wordpress.svg" type="image/svg+xml" class="icon"></object>
+                                <object data="./assets/technologies/wordpress.svg" type="image/svg+xml"
+                                    class="icon"></object>
                             </div>
                         </div>
                     </div>
@@ -201,85 +225,106 @@
                         <p>Sin Conexión</p>
                         <P>Última Conexión: ayer</P>
                     </header>
-                    <div class="badges">
-                        <p>Tecnologías <span>16</span></p>
-                        <div class="badges-container">
-                            <!------------ HTML5 ------------>
-                            <object data="./assets/html5.svg" type="image/svg+xml" class="icon"></object>
+                    <div class="aside-body">
+                        <div class="badges">
+                            <p>Tecnologías <span>16</span></p>
+                            <div class="badges-container">
+                                <!------------ HTML5 ------------>
+                                <object data="./assets/technologies/html5.svg" type="image/svg+xml"
+                                    class="icon"></object>
 
-                            <!------------ CSS ------------>
-                            <object data="./assets/css.svg" type="image/svg+xml" class="icon"></object>
+                                <!------------ CSS ------------>
+                                <object data="./assets/technologies/css.svg" type="image/svg+xml" class="icon"></object>
 
-                            <!------------ JS ------------>
-                            <object data="./assets/js.svg" type="image/svg+xml" class="icon"></object>
+                                <!------------ JS ------------>
+                                <object data="./assets/technologies/js.svg" type="image/svg+xml" class="icon"></object>
 
-                            <!------------ Typescript ------------>
-                            <object data="./assets/ts.svg" type="image/svg+xml" class="icon"></object>
+                                <!------------ Typescript ------------>
+                                <object data="./assets/technologies/ts.svg" type="image/svg+xml" class="icon"></object>
 
-                            <!------------ React ------------>
-                            <object data="./assets/react.svg" type="image/svg+xml" class="icon"></object>
+                                <!------------ React ------------>
+                                <object data="./assets/technologies/react.svg" type="image/svg+xml"
+                                    class="icon"></object>
 
-                            <!------------ Tailwind ------------>
-                            <object data="./assets/tailwind.svg" type="image/svg+xml" class="icon"></object>
+                                <!------------ Tailwind ------------>
+                                <object data="./assets/technologies/tailwind.svg" type="image/svg+xml"
+                                    class="icon"></object>
 
-                            <!------------ Sass ------------>
-                            <object data="./assets/sass.svg" type="image/svg+xml" class="icon"></object>
+                                <!------------ Sass ------------>
+                                <object data="./assets/technologies/sass.svg" type="image/svg+xml"
+                                    class="icon"></object>
 
-                            <!------------ Node.js ------------>
-                            <object data="./assets/node.svg" type="image/svg+xml" class="icon"></object>
+                                <!------------ Node.js ------------>
+                                <object data="./assets/technologies/node.svg" type="image/svg+xml"
+                                    class="icon"></object>
 
-                            <!------------ Vite ------------>
-                            <object data="./assets/vite.svg" type="image/svg+xml" class="icon"></object>
+                                <!------------ Vite ------------>
+                                <object data="./assets/technologies/vite.svg" type="image/svg+xml"
+                                    class="icon"></object>
 
-                            <!------------ PostgreSQL ------------>
-                            <object data="./assets/postgresql.svg" type="image/svg+xml" class="icon"></object>
+                                <!------------ PostgreSQL ------------>
+                                <object data="./assets/technologies/postgresql.svg" type="image/svg+xml"
+                                    class="icon"></object>
 
-                            <!------------ Express ------------>
-                            <object data="./assets/express.svg" type="image/svg+xml" class="icon"></object>
+                                <!------------ Express ------------>
+                                <object data="./assets/technologies/express.svg" type="image/svg+xml"
+                                    class="icon"></object>
 
-                            <!------------ Git ------------>
-                            <object data="./assets/git.svg" type="image/svg+xml" class="icon"></object>
+                                <!------------ Git ------------>
+                                <object data="./assets/technologies/git.svg" type="image/svg+xml" class="icon"></object>
 
-                            <!------------ GitHub ------------>
-                            <object data="./assets/github.svg" type="image/svg+xml" class="icon"></object>
+                                <!------------ GitHub ------------>
+                                <object data="./assets/technologies/github.svg" type="image/svg+xml"
+                                    class="icon"></object>
 
-                            <!------------ Markdown ------------>
-                            <object data="./assets/markdown.svg" type="image/svg+xml" class="icon"></object>
+                                <!------------ Markdown ------------>
+                                <object data="./assets/technologies/markdown.svg" type="image/svg+xml"
+                                    class="icon"></object>
 
-                            <!------------ Wordpress ------------>
-                            <object data="./assets/wordpress.svg" type="image/svg+xml" class="icon"></object>
+                                <!------------ Wordpress ------------>
+                                <object data="./assets/technologies/wordpress.svg" type="image/svg+xml"
+                                    class="icon"></object>
 
-                            <!------------ Elementor ------------>
-                            <object data="./assets/elementor.svg" type="image/svg+xml" class="icon"></object>
+                                <!------------ Elementor ------------>
+                                <object data="./assets/technologies/elementor.svg" type="image/svg+xml"
+                                    class="icon"></object>
+                            </div>
+                        </div>
+                        <div class="other-tools">
+                            <p>Otras herramientas <span>7</span></p>
+                            <div class="other-tools-container">
+                                <!------------ VSC ------------>
+                                <object data="./assets/technologies/vsc.svg" type="image/svg+xml" class="icon"></object>
+
+                                <!------------ Windsurf ------------>
+                                <object data="./assets/technologies/windsurf.svg" type="image/svg+xml"
+                                    class="icon"></object>
+
+                                <!------------ Trello ------------>
+                                <object data="./assets/technologies/trello.svg" type="image/svg+xml"
+                                    class="icon"></object>
+
+                                <!------------ Linux ------------>
+                                <object data="./assets/technologies/linux.svg" type="image/svg+xml"
+                                    class="icon"></object>
+
+                                <!------------ Vercel ------------>
+                                <object data="./assets/technologies/vercel.svg" type="image/svg+xml"
+                                    class="icon"></object>
+
+                                <!------------ Railway ------------>
+                                <object data="./assets/technologies/railway.svg" type="image/svg+xml"
+                                    class="icon"></object>
+
+                                <!------------ Supabase ------------>
+                                <object data="./assets/technologies/supabase.svg" type="image/svg+xml"
+                                    class="icon"></object>
+
+
+                            </div>s
                         </div>
                     </div>
-                    <div class="other-tools">
-                        <p>Otras herramientas <span>7</span></p>
-                        <div class="other-tools-container">
-                            <!------------ VSC ------------>
-                            <object data="./assets/vsc.svg" type="image/svg+xml" class="icon"></object>
 
-                            <!------------ Windsurf ------------>
-                            <object data="./assets/windsurf.svg" type="image/svg+xml" class="icon"></object>
-
-                            <!------------ Trello ------------>
-                            <object data="./assets/trello.svg" type="image/svg+xml" class="icon"></object>
-
-                            <!------------ Linux ------------>
-                            <object data="./assets/linux.svg" type="image/svg+xml" class="icon"></object>
-
-                            <!------------ Vercel ------------>
-                            <object data="./assets/vercel.svg" type="image/svg+xml" class="icon"></object>
-
-                            <!------------ Railway ------------>
-                            <object data="./assets/railway.svg" type="image/svg+xml" class="icon"></object>
-
-                            <!------------ Supabase ------------>
-                            <object data="./assets/supabase.svg" type="image/svg+xml" class="icon"></object>
-
-
-                        </div>s
-                    </div>
                 </section>
             </aside>
         </div>
