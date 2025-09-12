@@ -1,8 +1,8 @@
 :root {
-  --gradient-right: rgba(0, 200, 255, 0.35); /* Azul celeste */
-  --gradient-left: rgba(255, 100, 180, 0.35); /* Rosa-magenta */
-  --gradient-background-right: rgba(0, 150, 100, 0.25); /* Verde agua */
-  --gradient-background-left: rgba(255, 200, 0, 0.25); /* Amarillo */
+  --gradient-right: rgba(51, 54, 253, 0.233);
+  --gradient-left: rgba(12, 85, 241, 0.37);
+  --gradient-background-right: rgba(51, 54, 253, 0);
+  --gradient-background-left: rgba(12, 85, 241, 0.13);
   --gradient-background: rgba(15, 23, 42, 0.7);
   /* --gradient-background: #0f172a; */
 }
@@ -16,8 +16,10 @@ body {
   background-position: center;
 }
 aside {
+  width: 300px;
   height: 100%;
-  background-color: rgba(71, 84, 75, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
   border-radius: 2px;
   padding: 0.5rem;
 }
@@ -29,16 +31,12 @@ button {
   border: none;
   border-radius: 2px;
   color: white;
-  background-color: #00966440;
+  background-color: #0c55f140;
   /* background-color: #302e4e; */
   transition: color 0.2s ease-in-out;
 }
 button:hover {
-  background-color: #00966466;
-}
-aside {
-  width: 250px;
-  height: 100%;
+  background-color: #0c55f166;
 }
 h1,
 h2,
@@ -67,7 +65,12 @@ footer i {
 }
 .profile-container {
   max-width: 976px;
-  background: radial-gradient(
+  background: linear-gradient(
+      to bottom,
+      rgba(51, 54, 253, 0) 0%,
+      transparent 15%
+    ),
+    radial-gradient(
       farthest-side at top right,
       var(--gradient-right),
       transparent 500px
@@ -99,6 +102,7 @@ footer i {
 .profile-header {
   display: flex;
   justify-content: space-between;
+  padding: 1.5rem 1rem;
   gap: 1rem;
 }
 /******* === PROFILE HEADER LEFT === *******/
@@ -175,6 +179,7 @@ footer i {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  margin-right: 1rem;
 }
 .profile-level {
   font-size: 19px;
@@ -255,7 +260,8 @@ footer i {
   flex-direction: column;
   gap: 2rem;
   border-radius: 2px;
-  background-color: rgba(71, 84, 75, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
 }
 .project-container {
   padding: 0 1rem;
@@ -318,4 +324,32 @@ footer i {
 }
 .project-technologies object {
   width: 1.5rem;
+}
+.online {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.online-circle {
+  margin-top: 0.2rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 100%;
+  background-color: #22c55e;
+  animation: 2s ease-in-out 2s infinite pulse;
+  animation-direction: alternate;
+}
+.online-text {
+  font-size: 20px !important;
+  font-weight: 200 !important;
+  color: white !important;
+}
+
+@keyframes pulse {
+  from {
+    background-color: #22c55e;
+  }
+  to {
+    background-color: #22c55e50;
+  }
 }
