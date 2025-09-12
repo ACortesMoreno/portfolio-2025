@@ -353,3 +353,37 @@ footer i {
     background-color: #22c55e50;
   }
 }
+
+/******* Pacman *******/
+.pacman-container {
+  position: fixed;
+  top: 7rem;
+  left: -1rem;
+  transform: rotate(-30deg);
+  /* z-index: 1; */
+}
+.pacman-1 {
+  position: absolute;
+  width: 5rem;
+  height: auto;
+  animation: 2s ease-in-out 2s infinite pacman;
+  animation-direction: alternate;
+}
+
+.pacman-2 {
+  position: absolute;
+  width: 5rem;
+  height: auto;
+  left: 6rem;
+  animation: 2s ease-in-out 2s infinite pacman;
+  animation-direction: alternate;
+}
+
+@keyframes pacman {
+  from {
+    transform: translate(0rem, 0rem);
+  }
+  to {
+    transform: translate(2rem, 1.5rem);
+  }
+}
