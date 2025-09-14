@@ -34,8 +34,8 @@ body {
   background-image: url("https://community.fastly.steamstatic.com/public/images/profile/2020/bg_dots.png");
   background-color: black;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: center top;
+  /* background-size: cover; */
 }
 
 h1,
@@ -162,6 +162,14 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.profile-info p {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #c4c4c4;
+  margin-top: 0.5rem;
+  max-width: 300px;
 }
 
 .profile-name {
@@ -450,6 +458,12 @@ footer i {
     justify-content: space-between;
     padding: 1.5rem 1rem;
   }
+  .profile-header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
 
   .profile-header-left {
     flex-direction: row;
@@ -480,7 +494,13 @@ footer i {
     justify-content: flex-start;
   }
 
+  .profile-info p {
+    font-size: 13px;
+    max-width: 350px;
+  }
+
   .profile-level {
+    align-self: start;
     font-size: 18px;
   }
 
@@ -534,7 +554,7 @@ footer i {
 /* Desktop Styles */
 @media (min-width: 1024px) {
   .profile-container {
-    max-width: 976px;
+    max-width: 926px;
   }
 
   .profile-header-left {
@@ -552,6 +572,11 @@ footer i {
 
   .profile-name {
     font-size: 24px;
+  }
+
+  .profile-info p {
+    font-size: 14px;
+    max-width: 400px;
   }
 
   .profile-level {
