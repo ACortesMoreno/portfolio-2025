@@ -199,6 +199,10 @@ button:hover {
   justify-content: center;
 }
 
+.profile-location p {
+  margin: 0;
+}
+
 .profile-location img {
   width: 1rem;
   height: auto;
