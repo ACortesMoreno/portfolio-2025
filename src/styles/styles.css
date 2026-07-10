@@ -348,6 +348,11 @@ aside {
   object-fit: cover;
 }
 
+.project-card-img-contain {
+  object-fit: contain !important;
+  max-height: 200px;
+}
+
 .project-info {
   flex: 1;
   display: flex;
@@ -357,6 +362,18 @@ aside {
 
 .project-info h3 {
   font-size: 16px;
+}
+
+.project-info a {
+  display: inline-block;
+}
+
+.project-logo {
+  height: 22px !important;
+  width: auto !important;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .project-info p {

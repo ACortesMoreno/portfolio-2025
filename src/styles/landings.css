@@ -103,22 +103,103 @@
   max-width: 720px;
   border-radius: 4px;
   overflow: hidden;
+  border: 1px solid #ffffff15;
 }
 
-.landing-preview-placeholder {
+.landing-preview img {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: auto;
+  display: block;
+}
+
+.landing-how {
+  padding: 2rem 0;
+}
+
+.landing-how h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.landing-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.landing-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+  border-radius: 2px;
+  padding: 1.25rem;
+  border: 1px solid #ffffff08;
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-  border: 1px solid #ffffff15;
-  border-radius: 4px;
+  border-radius: 50%;
+  background: #0c55f140;
+  color: #8ab4f8;
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
-.landing-preview-placeholder span {
-  font-size: 2rem;
-  opacity: 0.3;
+.landing-step p {
+  font-size: 0.9rem;
+  color: #c4c4c4;
+  line-height: 1.5;
+  margin: 0;
+  padding-top: 0.25rem;
+}
+
+.landing-step strong {
+  color: #fff;
+}
+
+.landing-privacy {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+  border-radius: 2px;
+  border: 1px solid #ffffff08;
+  text-align: center;
+}
+
+.landing-privacy h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.landing-privacy p {
+  font-size: 0.85rem;
+  color: #9b9b9f;
+  line-height: 1.5;
+  max-width: 480px;
+  margin: 0 auto 1rem;
+}
+
+.landing-privacy a {
+  color: #8ab4f8;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.landing-privacy a:hover {
+  text-decoration: underline;
 }
 
 .landing-features {
@@ -183,6 +264,14 @@
 
   .landing-features {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .landing-steps {
+    flex-direction: row;
+  }
+
+  .landing-step {
+    flex: 1;
   }
 }
 
