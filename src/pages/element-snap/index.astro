@@ -1,89 +1,100 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import "../../styles/element-snap.css";
 ---
 
 <BaseLayout
-  title="Element Snap — Captura componentes web como PNG"
-  description="Element Snap es una extensión de navegador para capturar y exportar componentes visuales de cualquier página web como imágenes PNG de alta calidad."
+  title="Element Snap — Capture web elements as images"
+  description="Element Snap is a Chrome extension that lets you capture any visual element from a webpage as a high-quality PNG, JPEG, or WebP image."
   canonical="https://lacrima.dev/element-snap/"
 >
-  <div class="landing">
-    <header class="landing-header">
-      <h1>lacrima.dev</h1>
-      <a href="/" class="landing-back">← Volver al portfolio</a>
-    </header>
+  <div class="es">
+    <nav class="es-nav">
+      <a href="/" class="es-nav-back">← lacrima.dev</a>
+    </nav>
 
-    <section class="landing-hero">
-      <span class="landing-badge coming-soon">Próximamente</span>
-      <h2>Element Snap</h2>
-      <p>
-        Captura cualquier componente, sección o elemento visual de una página web
-        y expórtalo como PNG de alta calidad. Sin recortes de pantalla, sin
-        edición posterior.
-      </p>
-      <a href="#" class="landing-cta" aria-label="Añadir a Chrome (próximamente)">
-        Añadir a Chrome
-      </a>
-      <!-- TODO: reemplazar href="#" con el enlace real de Chrome Web Store -->
-    </section>
-
-    <div class="landing-preview">
-      <div class="landing-preview-placeholder">
-        <span>Captura de ejemplo</span>
+    <section class="es-hero">
+      <div class="es-hero-bg">
+        <img src="/assets/projects-screenshots/element-snap-hero.png" alt="" />
       </div>
-    </div>
-
-    <section class="landing-features">
-      <div class="landing-feature">
-        <h3>Captura con un clic</h3>
-        <p>
-          Selecciona cualquier elemento de la página con el cursor y captúralo
-          al instante. Sin herramientas de desarrollo, sin extensiones extra.
-        </p>
-      </div>
-      <div class="landing-feature">
-        <h3>Exportación PNG transparente</h3>
-        <p>
-          Las capturas incluyen fondo transparente cuando el elemento lo
-          soporta. Ideal para diseñadores y documentación técnica.
-        </p>
-      </div>
-      <div class="landing-feature">
-        <h3>Alta resolución</h3>
-        <p>
-          Captura a 2x y 3x para pantallas Retina. Obtén imágenes nítidas
-          sin perder calidad al escalar.
-        </p>
-      </div>
-      <div class="landing-feature">
-        <h3>Recorte preciso</h3>
-        <p>
-          El selector captura exactamente el contorno del elemento, sin bordes
-          adicionales ni contenido circundante.
-        </p>
-      </div>
-      <div class="landing-feature">
-        <h3>Sin registro ni cuenta</h3>
-        <p>
-          Todo el procesamiento ocurre localmente en tu navegador. No
-          enviamos capturas a ningún servidor.
-        </p>
-      </div>
-      <div class="landing-feature">
-        <h3>Atajo de teclado</h3>
-        <p>
-          Activa la captura rápido con un atajo personalizable. Sin
-          interrumpir tu flujo de trabajo.
-        </p>
+      <div class="es-hero-content">
+        <img src="/assets/projects-screenshots/element-snap-logo.png" alt="Element Snap logo" class="es-logo" />
+        <h1>Element Snap</h1>
+        <p>Point, click, capture. Turn any element on a webpage into a high-quality image.</p>
+        <a href="https://chromewebstore.google.com/detail/element-snap" class="es-cta" target="_blank" rel="noopener noreferrer">
+          Add to Chrome — it's free
+        </a>
       </div>
     </section>
 
-    <footer class="landing-footer">
-      <p><a href="mailto:lacrimadev@gmail.com">lacrimadev@gmail.com</a></p>
-      <p><a href="/element-snap/privacy">Política de privacidad</a></p>
-      <p style="margin-top: 0.5rem; font-size: 0.75rem">
-        Element Snap no está afiliado con Google, Chrome, ni Valve/Steam.
-      </p>
+    <section class="es-section">
+      <h2>How it works</h2>
+      <div class="es-steps">
+        <div class="es-step">
+          <span class="es-step-num">1</span>
+          <div>
+            <strong>Select</strong>
+            <p>Click the toolbar icon, then hover any element to preview it.</p>
+          </div>
+        </div>
+        <div class="es-step">
+          <span class="es-step-num">2</span>
+          <div>
+            <strong>Configure</strong>
+            <p>Choose format, scale, background, and margin from the floating toolbar.</p>
+          </div>
+        </div>
+        <div class="es-step">
+          <span class="es-step-num">3</span>
+          <div>
+            <strong>Capture</strong>
+            <p>Download the image or copy it straight to your clipboard.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="es-section">
+      <h2>Features</h2>
+      <div class="es-grid">
+        <div class="es-card">
+          <h3>Multi-format export</h3>
+          <p>PNG for lossless quality, JPEG or WebP for smaller files. Transparent or white background.</p>
+        </div>
+        <div class="es-card">
+          <h3>Retina-ready scaling</h3>
+          <p>Capture at 1x, 2x, 3x, or 4x. Sharp on any display from standard monitors to 5K Retina.</p>
+        </div>
+        <div class="es-card">
+          <h3>Shadow-aware</h3>
+          <p>Automatically detects and includes box-shadow, drop-shadow, and text-shadow with proper padding.</p>
+        </div>
+        <div class="es-card">
+          <h3>Clipboard copy</h3>
+          <p>Copy directly to clipboard. Paste into Figma, Slack, Notion, or any app — no download needed.</p>
+        </div>
+        <div class="es-card">
+          <h3>Batch capture</h3>
+          <p>Detect and download all similar elements on a page at once. Great for design systems.</p>
+        </div>
+        <div class="es-card">
+          <h3>Custom filenames</h3>
+          <p>Templates like <code>{'{tag}-{page}-{date}'}</code> to organize captures automatically.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="es-section es-privacy">
+      <h2>Your data stays on your machine</h2>
+      <p>Every capture is processed locally in your browser. No images, page content, or browsing data ever leave your device.</p>
+      <a href="/element-snap/privacy">Read the full privacy policy →</a>
+    </section>
+
+    <footer class="es-footer">
+      <a href="mailto:lacrimadev@gmail.com">lacrimadev@gmail.com</a>
+      <span>·</span>
+      <a href="/element-snap/privacy">Privacy Policy</a>
+      <p>Element Snap is not affiliated with Google, Chrome, or Valve/Steam.</p>
     </footer>
   </div>
 </BaseLayout>
