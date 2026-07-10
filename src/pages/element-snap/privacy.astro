@@ -3,71 +3,114 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-  title="Política de privacidad — Element Snap"
-  description="Política de privacidad de Element Snap, una extensión de navegador para capturar componentes web."
+  title="Privacy Policy — Element Snap"
+  description="Privacy policy for Element Snap, a Chrome extension for capturing web elements as images."
   canonical="https://lacrima.dev/element-snap/privacy/"
 >
   <div class="landing">
     <header class="landing-header">
       <h1>Element Snap</h1>
-      <a href="/element-snap" class="landing-back">← Volver a Element Snap</a>
+      <a href="/element-snap" class="landing-back">← Back to Element Snap</a>
     </header>
 
     <main style="max-width: 680px; margin: 0 auto; padding: 2rem 0">
-      <h2 style="font-weight: 300; font-size: 1.5rem; margin-bottom: 1.5rem">Política de privacidad</h2>
+      <h2 style="font-weight: 300; font-size: 1.5rem; margin-bottom: 1.5rem">Privacy Policy</h2>
 
       <div style="color: #9b9b9f; font-size: 0.9rem; line-height: 1.7">
         <p style="margin-bottom: 1rem">
-          <strong style="color: #ccc">Última actualización:</strong> julio 2026.
+          <strong style="color: #ccc">Last updated:</strong> July 10, 2026.
         </p>
 
         <p style="margin-bottom: 1rem">
-          Element Snap procesa todas las capturas de pantalla <strong style="color: #ccc">localmente</strong>
-          en tu navegador. No se envía ni almacena ninguna captura, imagen o contenido de las páginas
-          que visitas en servidores externos.
+          Element Snap is a Chrome extension that lets you capture visual elements from any
+          webpage as high-quality images. This policy describes what data the extension
+          accesses, how it is used, and what it does not do.
         </p>
 
-        <h3 style="color: #ccc; font-weight: 400; font-size: 1rem; margin: 1.5rem 0 0.5rem">Datos que recopilamos</h3>
-        <p style="margin-bottom: 1rem">
-          Esta extensión no recopila, almacena ni transmite datos personales, hábitos de navegación,
-          contenido de páginas, ni metadatos de uso. No se requiere registro ni cuenta para usar la extensión.
+        <h3 style="color: #ccc; font-weight: 400; font-size: 1rem; margin: 1.5rem 0 0.5rem">Data the extension accesses</h3>
+
+        <p style="margin-bottom: 0.5rem">
+          <strong style="color: #ccc">Active page content.</strong>
+          When the user initiates a capture, the extension accesses the DOM of the active tab
+          to read computed styles, dimensions, shadows, and render the selected element to an
+          image. This access occurs only upon user request and is never transmitted to any server.
         </p>
 
-        <h3 style="color: #ccc; font-weight: 400; font-size: 1rem; margin: 1.5rem 0 0.5rem">Almacenamiento local</h3>
-        <p style="margin-bottom: 1rem">
-          La extensión puede utilizar <code style="color: #8ab4f8">chrome.storage.local</code>
-          para guardar preferencias del usuario (como el atajo de teclado personalizado).
-          Estos datos permanecen únicamente en tu dispositivo y pueden eliminarse desde
-          la gestión de extensiones de Chrome.
+        <p style="margin-bottom: 0.5rem">
+          <strong style="color: #ccc">User interaction during selection.</strong>
+          The extension tracks mouse position and clicks to power the element selector
+          (hover-to-preview, click-to-select). This data is processed in real time and is
+          never stored or transmitted.
         </p>
 
-        <h3 style="color: #ccc; font-weight: 400; font-size: 1rem; margin: 1.5rem 0 0.5rem">Servicios de terceros</h3>
         <p style="margin-bottom: 1rem">
-          Esta extensión no integra servicios de terceros, analytics, trackers, ni SDKs
-          publicitarios. No se realizan peticiones de red excepto las necesarias para
-          cargar la página que el usuario está visitando (funcionamiento normal del navegador).
+          <strong style="color: #ccc">Authentication information.</strong>
+          Lifetime license users may sign in with their Google account via Chrome Identity API.
+          The extension stores only the authentication token needed to verify license status.
+          No Google profile data (name, email, etc.) is accessed or stored.
         </p>
 
-        <h3 style="color: #ccc; font-weight: 400; font-size: 1rem; margin: 1.5rem 0 0.5rem">Cambios en esta política</h3>
+        <h3 style="color: #ccc; font-weight: 400; font-size: 1rem; margin: 1.5rem 0 0.5rem">Local storage</h3>
         <p style="margin-bottom: 1rem">
-          Si esta política cambia, se actualizará la fecha de "última actualización" y,
-          en caso de cambios sustanciales, se notificará a través de la página de la extensión
-          en Chrome Web Store.
+          The extension uses <code style="color: #8ab4f8">chrome.storage.local</code> to
+          store user preferences (format, scale, background, margins), capture history
+          (lifetime license users only), and license status. All data remains exclusively on the user's
+          device and can be removed by uninstalling the extension or through Chrome's
+          storage settings.
         </p>
 
-        <h3 style="color: #ccc; font-weight: 400; font-size: 1rem; margin: 1.5rem 0 0.5rem">Contacto</h3>
+        <h3 style="color: #ccc; font-weight: 400; font-size: 1rem; margin: 1.5rem 0 0.5rem">Third-party services</h3>
+        <p style="margin-bottom: 0.5rem">
+          The extension communicates with the following services exclusively for
+          authentication and license verification:
+        </p>
+        <ul style="margin-bottom: 1rem; padding-left: 1.2rem">
+          <li style="margin-bottom: 0.3rem">
+            <strong style="color: #ccc">Supabase</strong> — Google OAuth authentication.
+            Only the Chrome Identity token is sent to exchange for a session.
+          </li>
+          <li style="margin-bottom: 0.3rem">
+            <strong style="color: #ccc">Our backend</strong> — License status verification
+            and account management. No page content or browsing data is sent.
+          </li>
+          <li>
+            <strong style="color: #ccc">Stripe</strong> — Payment processing for the lifetime
+            license. Payment occurs on Stripe's secure page. The extension does not access
+            credit card data or financial information.
+          </li>
+        </ul>
+
         <p style="margin-bottom: 1rem">
-          Si tienes preguntas sobre esta política, puedes escribir a
+          No analytics services, trackers, advertising SDKs, or user behavior monitoring
+          tools are used.
+        </p>
+
+        <h3 style="color: #ccc; font-weight: 400; font-size: 1rem; margin: 1.5rem 0 0.5rem">What Element Snap does not do</h3>
+        <ul style="margin-bottom: 1rem; padding-left: 1.2rem">
+          <li style="margin-bottom: 0.3rem">Does not sell or transfer user data to third parties.</li>
+          <li style="margin-bottom: 0.3rem">Does not use user data for targeted advertising.</li>
+          <li style="margin-bottom: 0.3rem">Does not track the user's browsing history.</li>
+          <li style="margin-bottom: 0.3rem">Does not send captures or page content to external servers.</li>
+          <li>Does not use user data for creditworthiness checks or financial activities.</li>
+        </ul>
+
+        <h3 style="color: #ccc; font-weight: 400; font-size: 1rem; margin: 1.5rem 0 0.5rem">Security</h3>
+        <p style="margin-bottom: 1rem">
+          All image capture and processing occurs locally in the user's browser.
+          Communications with the backend and Supabase use encrypted connections (HTTPS).
+        </p>
+
+        <h3 style="color: #ccc; font-weight: 400; font-size: 1rem; margin: 1.5rem 0 0.5rem">Changes to this policy</h3>
+        <p style="margin-bottom: 1rem">
+          If this policy changes, the "last updated" date will be revised and any
+          substantial changes will be announced on the extension's Chrome Web Store page.
+        </p>
+
+        <h3 style="color: #ccc; font-weight: 400; font-size: 1rem; margin: 1.5rem 0 0.5rem">Contact</h3>
+        <p style="margin-bottom: 1rem">
+          If you have questions about this policy, you can reach us at
           <a href="mailto:lacrimadev@gmail.com" style="color: #8ab4f8">lacrimadev@gmail.com</a>.
         </p>
-
-        <div style="margin-top: 2rem; padding: 1rem; background: #ffffff08; border-radius: 2px; font-size: 0.8rem">
-          <p style="margin: 0">
-            <strong style="color: #fbbf24">TODO:</strong> Revisar esta política con el texto final
-            antes de publicar en Chrome Web Store. Asegurarse de que refleja exactamente el
-            comportamiento de la versión publicada.
-          </p>
-        </div>
       </div>
     </main>
 
