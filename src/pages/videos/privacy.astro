@@ -1,0 +1,98 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import "../../styles/videos.css";
+---
+
+<BaseLayout
+  title="Privacy Policy — Lacrima Videos"
+  description="Privacy policy for Lacrima Videos CLI, the internal tool Lacrima Videos uses to publish to and analyze its own YouTube channels."
+  canonical="https://lacrima.dev/videos/privacy/"
+>
+  <div class="landing">
+    <header class="landing-header">
+      <h1>Lacrima Videos</h1>
+      <a href="/videos" class="landing-back">← Back to Lacrima Videos</a>
+    </header>
+
+    <main class="videos-doc">
+      <h2>Privacy Policy</h2>
+      <p><strong>Last updated:</strong> October 20, 2026.</p>
+
+      <p>
+        This policy explains what data Lacrima Videos CLI (the "Tool") accesses, how it is used
+        and stored, and how it can be deleted. The Tool is an internal application used only by the
+        Lacrima Videos team to manage our own YouTube channels.
+      </p>
+
+      <h3>YouTube API Services</h3>
+      <p>
+        The Tool uses YouTube API Services. By using the Tool you agree to be bound by the
+        <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service</a>.
+        Google's handling of data is described in the
+        <a href="http://www.google.com/policies/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
+        (http://www.google.com/policies/privacy).
+      </p>
+
+      <h3>Data the Tool accesses</h3>
+      <p>When a channel owner signs in with Google and grants access, the Tool can:</p>
+      <ul>
+        <li>upload videos and thumbnails to that channel and edit their metadata (title, description, tags, privacy and publication time);</li>
+        <li>read the channel's basic information (channel ID, name, handle and public counts);</li>
+        <li>read YouTube Analytics reports for that channel's own videos (for example views, watch time, average view duration, likes, comments, shares and subscribers gained or lost);</li>
+        <li>read comments on the channel's own videos.</li>
+      </ul>
+      <p>
+        The Tool does not access any channel whose owner has not authorized it, and it never posts,
+        comments or rates content on other channels.
+      </p>
+
+      <h3>How the data is used</h3>
+      <p>
+        The data is used only to publish our videos and to understand how they perform, so we
+        can decide what to make next. We do not sell, rent or share it with third parties, and we do
+        not use it for advertising.
+      </p>
+
+      <h3>Where it is stored</h3>
+      <ul>
+        <li>
+          <strong>OAuth tokens</strong> are stored only on our own computer, in a file readable
+          only by its owner. They are never sent to anyone other than Google.
+        </li>
+        <li>
+          <strong>Channel and video statistics</strong> are stored in our private database
+          (hosted on Supabase), protected by access controls and accessible only to our team.
+        </li>
+        <li>
+          Non-statistical data obtained from the API (such as titles or comment text) is refreshed or
+          deleted within 30 days, as required by the YouTube API Services Developer Policies.
+          Statistics are kept for up to 36 months to analyze trends.
+        </li>
+      </ul>
+      <p>The Tool does not use cookies and does not collect any information from viewers of our videos.</p>
+
+      <h3>Revoking access and deleting data</h3>
+      <p>
+        A channel owner can revoke the Tool's access at any time from the Google security settings page:
+        <a href="https://security.google.com/settings/security/permissions" target="_blank" rel="noopener noreferrer">https://security.google.com/settings/security/permissions</a>.
+        When access is revoked, or on request, we delete the stored token and all data obtained from that
+        channel through the API within 7 days. To request deletion, write to
+        <a href="mailto:lacrimadev@gmail.com">lacrimadev@gmail.com</a>.
+      </p>
+
+      <h3>Changes to this policy</h3>
+      <p>If this policy changes, the "last updated" date will be revised.</p>
+
+      <h3>Contact</h3>
+      <p>
+        If you have questions about this policy, you can reach us at
+        <a href="mailto:lacrimadev@gmail.com">lacrimadev@gmail.com</a>.
+      </p>
+    </main>
+
+    <footer class="landing-footer">
+      <p><a href="mailto:lacrimadev@gmail.com">lacrimadev@gmail.com</a></p>
+      <p><a href="/videos">← Lacrima Videos</a> · <a href="/videos/terms">Terms of Service</a></p>
+    </footer>
+  </div>
+</BaseLayout>

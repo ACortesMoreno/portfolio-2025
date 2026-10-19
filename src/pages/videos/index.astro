@@ -1,0 +1,63 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import "../../styles/videos.css";
+---
+
+<BaseLayout
+  title="Lacrima Videos — Original explainer videos"
+  description="Lacrima Videos is a small independent project that produces original illustrated explainer videos for its own YouTube channels."
+  canonical="https://lacrima.dev/videos/"
+>
+  <div class="landing">
+    <header class="landing-header">
+      <h1>Lacrima Videos</h1>
+      <nav class="videos-nav">
+        <a href="/videos/privacy" class="landing-back">Privacy Policy</a>
+        <a href="/videos/terms" class="landing-back">Terms of Service</a>
+        <a href="/" class="landing-back">← lacrima.dev</a>
+      </nav>
+    </header>
+
+    <main class="videos-doc">
+      <h2>Lacrima Videos</h2>
+      <p class="videos-lede">
+        An independent project that makes original, illustrated "what if" explainer videos about
+        science and nature.
+      </p>
+
+      <h3>Our channels</h3>
+      <ul>
+        <li>
+          <a href="https://www.youtube.com/channel/UCP2-0FiZKkixRxz1NRcwIdg" target="_blank" rel="noopener noreferrer">What If Lab</a>
+          — short animated explainers that answer one curious question at a time, in English and Spanish.
+        </li>
+      </ul>
+
+      <h3>Publishing tool</h3>
+      <p>
+        We run an internal publishing tool, <strong>Lacrima Videos CLI</strong>, used only by the
+        team to manage our own channels. It uses <strong>YouTube API Services</strong> to:
+      </p>
+      <ul>
+        <li>upload videos that a team member has reviewed and approved, with their title, description, tags and thumbnail;</li>
+        <li>schedule their publication time;</li>
+        <li>read the statistics and analytics of our own channels and videos so we can learn what works.</li>
+      </ul>
+      <p>
+        The tool is not offered to the public and does not access any channel other than
+        our own. Each channel owner signs in with Google and can revoke access at any time.
+      </p>
+      <p class="videos-note">
+        By using this tool, our team agrees to the
+        <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service</a>.
+        See our <a href="/videos/privacy">Privacy Policy</a>, our <a href="/videos/terms">Terms of Service</a>
+        and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
+      </p>
+    </main>
+
+    <footer class="landing-footer">
+      <p><a href="mailto:lacrimadev@gmail.com">lacrimadev@gmail.com</a></p>
+      <p><a href="/videos/privacy">Privacy Policy</a> · <a href="/videos/terms">Terms of Service</a></p>
+    </footer>
+  </div>
+</BaseLayout>

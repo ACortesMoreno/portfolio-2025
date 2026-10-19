@@ -1,0 +1,66 @@
+.videos-nav {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.videos-doc {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  color: #9b9b9f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.videos-doc p,
+.videos-doc li {
+  color: #9b9b9f;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.videos-doc h2 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.videos-doc h3 {
+  color: #ccc;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 1.75rem 0 0.5rem;
+}
+
+.videos-doc p {
+  margin-bottom: 1rem;
+}
+
+.videos-doc ul {
+  margin-bottom: 1rem;
+  padding-left: 1.2rem;
+}
+
+.videos-doc li {
+  margin-bottom: 0.35rem;
+}
+
+.videos-doc strong {
+  color: #ccc;
+}
+
+.videos-doc a {
+  color: #8ab4f8;
+}
+
+.videos-doc .videos-lede {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.videos-doc .videos-note {
+  font-size: 0.85rem;
+}
